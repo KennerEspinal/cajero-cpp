@@ -11,7 +11,7 @@ void gotoxy(int x, int y) {
 }
 
 void retirar_dinero(int monto) {
-    if (monto < 0) {
+    if (monto <= 0) {
         cout << "Error: El monto no puede ser menor que 0." << endl;
         return;
     }
